@@ -1,0 +1,18 @@
+body {
+    background-color: #FFF;
+    color: #434455;
+}
+
+ul {
+    list-style: none;
+}
+
+.site-nav .link {
+    color: #2E2F42;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link:active {
+    color: #4D5AE5;
+}
