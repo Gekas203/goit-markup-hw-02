@@ -1,18 +1,46 @@
+/* #434455 */
+
+/* #2E2F42 */
+
+/* #FFFFFF */
+
+/* #4D5AE5 */
+
+/* #F4F4FD */
+
 body {
-    background-color: #FFF;
+    background-color: #FFFFFF;
     color: #434455;
+}
+
+.logo {
+   color: #2E2F42; 
+}
+.logo-part {
+     color: #4D5AE5;
 }
 
 ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .site-nav .link {
-    color: #2E2F42;
+   color: #2E2F42;
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus,
-.site-nav .link:active {
-    color: #4D5AE5;
+.site-nav .link:focus {
+    color: #404BBF;
+}
+
+.section-title {
+    color: #2E2F42;
+}
+
+.feature-list .title {
+    color: #2E2F42;
 }
