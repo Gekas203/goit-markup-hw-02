@@ -1,184 +1,224 @@
 :root {
-    --primary-text-color: #434455;
-    --title-text-color: #2E2F42;
-    --logo-part-color: #4D5AE5;
-    --site-nav-color: #404BBF;
-    --site-background-color: #FFFFFF;
-    --section-bg-color: #F4F4FD;
+     --main-text-color: #434455;
+     --secondary-text-color: #2E2F42;
+     --main-bg-color: #FFF;
+     --secobdary-bg-color: #F4F4FD;
+     --main-focus-color: #4D5AE5;
+     --secondary-focus-color: #404BBF;
 }
 
 body {
-    background-color: var(--site-background-color);
-    color: var(--primary-text-color);
-    font-family: 'Roboto', sans-serif;
+     font-family: 'Roboto', sans-serif;
+     background-color: var(--main-bg-color);
+     color: var(--main-text-color)
 }
 
-.logo {
-    font-size: 18px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    line-height: 1.17;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-    color: var(--title-text-color); 
+.link {
+     text-decoration: none;
 }
+
+.list {
+     list-style: none;
+}
+
+/* logo */
+
+.navigation-logo {
+      font-size: 18px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      line-height: 1.17;
+      letter-spacing: 0.54px;
+      text-transform: uppercase;
+      color: var(--main-focus-color);
+}
+
 .logo-part {
-     font-size: 18px;
-     font-family: 'Raleway', sans-serif;
-     font-weight: 800;
-     line-height: 1.17;
-     letter-spacing: 0.54px; 
-     text-transform: uppercase;
-     color: var(--logo-part-color);
+     color: var(--secondary-text-color);
 }
 
-ul {
-    list-style: none;
-}
+/* Header navigation */
 
-a {
-    text-decoration: none;
-}
-
-.site-nav .link {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    color: var(--title-text-color);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--site-nav-color);
-}
-
-.section-title {
-     font-size: 36px;
-     font-weight: 700;
-     line-height: 1.11;
-     letter-spacing: 0.72px;
-     text-transform: capitalize;
-     color: var(--title-text-color);
-}
-
-.feature-list .title {
-     font-size: 20px;
-     font-weight: 500;
-     line-height: 1.2;
-     letter-spacing: 0.4px;
-     color: var(--title-text-color);
-}
-
-.feature-list .text {
-     font-size: 16px;
-     line-height: 1.5;
-     letter-spacing: 0.32px;
-}
-
-.team-list .title {
-     font-size: 20px;
-     font-weight: 500;
-     line-height: 1.2;
-     letter-spacing: 0.4px;
-     color: var(--title-text-color);
-}
-.team-list .text {
-     font-size: 16px;
-     line-height: 1.5;
-     letter-spacing: 0.32px;
-}
-
-.contact-list .link {
-     font-size: 16px;
-     line-height: 1.5;
-     letter-spacing: 0.32px;
-     color: var(--primary-text-color);
-}
-
-.contact-list .link:hover,
-.contact-list .link:focus {
-    color: var(--site-nav-color);
-}
-
-.hero .btn-link {
-     font-family: inherit;
+.navigation-list .item-link {
      font-size: 16px;
      font-weight: 500;
      line-height: 1.5;
-     letter-spacing: 0.64px;
-     background-color: var(--logo-part-color);
-     color: var(--site-background-color);
+     letter-spacing: 0.02em;
+     color: var(--secondary-text-color);
 }
 
-.hero .btn-link:hover,
-.hero .btn-link:focus {
-    background-color: var(--site-nav-color);
-    color: var(--site-background-color);
+.navigation-list .item-link:hover,
+.navigation-list .item-link:focus {
+     color: var(--secondary-focus-color);
 }
+
+.contacts-list .item-link {
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: var(--main-text-color);
+}
+
+.contacts-list .item-link:hover,
+.contacts-list .item-link:focus {
+     color: var(--secondary-focus-color);
+}
+
+/* Hero section */
 
 .hero {
-    background-color: var(--title-text-color);
+     background-color: var(--secondary-text-color);
 }
 
-.hero .title {
-     font-size: 56px;
-     font-weight: 700;
-     line-height: 1.08;
-     letter-spacing: 1.12px;
-     color: var(--site-background-color);
+.hero-title {
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 1.07;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: var(--main-bg-color);
 }
 
-.section.bg {
-    background-color: var(--section-bg-color);
+.hero-button {
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      background-color: var(--main-focus-color);
+      color: var(--main-bg-color);
+      cursor: pointer;
 }
 
-.page-footer {
-    background-color: var(--title-text-color);
+.hero-button:hover,
+.hero-button:focus {
+     background-color: var(--secondary-focus-color);
 }
 
-.logo-studio {
-     font-size: 18px;
-     font-family: 'Raleway', sans-serif;
-     font-weight: 800;
-     line-height: 1.17;
-     letter-spacing: 0.54px;
-     text-transform: uppercase;
-     color: var(--section-bg-color);
+/* Features section */
+
+.features-list .item-title {
+      font-size: 20px;
+      font-family: Roboto;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      color: var(--secondary-text-color);
 }
 
-.text-footer {
-     font-size: 16px;
-     line-height: 1.5;
-     letter-spacing: 0.32px;
-     color: var(--section-bg-color);
+.features-list .item-text {
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: var(--main-text-color);
 }
 
-.services-list .button-link {
-     font-size: 16px;
-     font-family: inherit;
-     font-weight: 500;
-     line-height: 1.5;
-     letter-spacing: 0.64px;
-     color: var(--logo-part-color);
+/* Work section */
+
+.work-title {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.11;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      text-align: center;
+      color: var(--secondary-text-color);
 }
 
-.services-list .button-link:hover,
-.services-list .button-link:focus {
-    background-color: var(--site-nav-color);
-    color: var(--site-background-color);
+/* Team section */
+
+.team {
+     background-color: var(--secobdary-bg-color);
 }
 
-.item-title {
-     font-size: 20px;
-     font-weight: 500;
-     line-height: 1.2;
-     letter-spacing: 0.4px;
-     color: var(--title-text-color);
+.team-title {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.11;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      text-align: center;
+      color: var(--secondary-text-color);
 }
 
-.item-text {
-     font-size: 16px;
-     line-height: 1.5;
-     letter-spacing: 0.32px;
+.team-list .list-item {
+     background-color: var(--main-bg-color);
+}
+
+.team-list .item-title {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      color: var(--secondary-text-color);
+}
+
+.team-list .item-text {
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: var(--main-text-color);
+}
+
+/* Footer */
+
+.second-logo {
+     background-color: var(--secondary-text-color);
+}
+
+.second-logo-link {
+      font-size: 18px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--main-focus-color);
+}
+
+.second-logo-part {
+     color: var(--secobdary-bg-color);
+}
+
+.second-logo-text {
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: var(--secobdary-bg-color);
+}
+
+/* Portfolio services */
+
+.services-list .item-button {
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: var(--main-focus-color);
+      background-color: var(--secobdary-bg-color);
+      cursor: pointer;
+}
+
+.services-list .item-button:hover,
+.services-list .item-button:focus {
+     color: var(--main-bg-color);
+     background-color: var(--secondary-focus-color);
+}
+
+/* Images */
+
+.images-list .item-title {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      color: var(--secondary-text-color);
+}
+
+.images-list .item-text {
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: var(--main-text-color)
 }
